@@ -1,0 +1,8 @@
+https://www.msys2.org/
+pacman -S mingw-w64-ucrt-x86_64-gcc
+pacman -Syu
+pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain
+
+pacman -S mingw-w64-x86_64-gcc
+
+http://www.codebind.com/cprogramming/install-mingw-windows-10-gcc/
