@@ -6,8 +6,8 @@
       "id": 17,
       "type": "CheckpointLoaderSimple",
       "pos": [
-        -744.2420702851558,
-        -28.136901185937454
+        121.49076789083014,
+        709.3607844947047
       ],
       "size": {
         "0": 315,
@@ -51,37 +51,11 @@
       ]
     },
     {
-      "id": 9,
-      "type": "SaveImage",
-      "pos": [
-        1028.9152533203128,
-        -924.5636162109366
-      ],
-      "size": {
-        "0": 415.3547058105469,
-        "1": 389.4997253417969
-      },
-      "flags": {},
-      "order": 18,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 25
-        }
-      ],
-      "properties": {},
-      "widgets_values": [
-        "ComfyUI"
-      ]
-    },
-    {
       "id": 22,
       "type": "VAELoader",
       "pos": [
-        -758.6728023164059,
-        -178.4240558734373
+        107.06003585958018,
+        559.0736298072048
       ],
       "size": [
         351.33327414772725,
@@ -112,8 +86,8 @@
       "id": 25,
       "type": "VAELoader",
       "pos": [
-        -761.6728023164059,
-        118.57594412656248
+        104.06003585958015,
+        856.0736298072046
       ],
       "size": [
         358.33327414772725,
@@ -144,8 +118,8 @@
       "id": 5,
       "type": "EmptyLatentImage",
       "pos": [
-        -749.5280380859373,
-        -777.9377499999998
+        742.2752436590631,
+        1051.239156736833
       ],
       "size": {
         "0": 315,
@@ -179,8 +153,8 @@
       "id": 35,
       "type": "PrimitiveNode",
       "pos": [
-        -705.5280380859373,
-        -599.9377499999996
+        786.2752436590631,
+        1229.239156736832
       ],
       "size": {
         "0": 210,
@@ -223,8 +197,8 @@
       "id": 16,
       "type": "CheckpointLoaderSimple",
       "pos": [
-        -743.2772873483649,
-        -324.0527258929692
+        122.45555082762107,
+        413.44495978767276
       ],
       "size": {
         "0": 315,
@@ -272,8 +246,8 @@
       "id": 27,
       "type": "PrimitiveNode",
       "pos": [
-        -757.5280380859373,
-        -1714.9377499999998
+        734.2752436590631,
+        114.2391567368337
       ],
       "size": {
         "0": 333.8014221191406,
@@ -313,8 +287,8 @@
       "id": 37,
       "type": "PrimitiveNode",
       "pos": [
-        -756.5280380859373,
-        -1501.9377499999998
+        735.2752436590631,
+        327.23915673683354
       ],
       "size": {
         "0": 333.8014221191406,
@@ -355,8 +329,8 @@
       "id": 38,
       "type": "PrimitiveNode",
       "pos": [
-        -756.5280380859373,
-        -1038.9377499999998
+        735.2752436590631,
+        790.2391567368327
       ],
       "size": {
         "0": 333.8014221191406,
@@ -397,8 +371,8 @@
       "id": 40,
       "type": "CLIPTextEncodeSDXLRefiner",
       "pos": [
-        -128,
-        -328
+        1444.800153887275,
+        926.2859627616513
       ],
       "size": [
         388.0968066406242,
@@ -456,8 +430,8 @@
       "id": 41,
       "type": "CLIPTextEncodeSDXLRefiner",
       "pos": [
-        -126,
-        -138
+        1446.800153887275,
+        1116.285962761651
       ],
       "size": [
         385.0968066406242,
@@ -515,8 +489,8 @@
       "id": 36,
       "type": "CLIPTextEncodeSDXL",
       "pos": [
-        -157.46137525546885,
-        -1273.3587059187487
+        1421.717626695431,
+        150.57058057947208
       ],
       "size": [
         400.19827955234325,
@@ -593,8 +567,8 @@
       "id": 39,
       "type": "CLIPTextEncodeSDXL",
       "pos": [
-        -158,
-        -945
+        1421.1790019508996,
+        478.9292864982211
       ],
       "size": [
         400.9882795523432,
@@ -674,8 +648,8 @@
       "id": 8,
       "type": "VAEDecode",
       "pos": [
-        699,
-        -1046
+        2278.179001950904,
+        377.92928649822073
       ],
       "size": {
         "0": 210,
@@ -714,8 +688,8 @@
       "id": 28,
       "type": "PrimitiveNode",
       "pos": [
-        -756.5280380859373,
-        -1258.9377499999998
+        735.2752436590631,
+        570.2391567368328
       ],
       "size": {
         "0": 333.8014221191406,
@@ -752,11 +726,119 @@
       "bgcolor": "#533"
     },
     {
+      "id": 43,
+      "type": "ImageUpscaleWithModel",
+      "pos": [
+        2289.9864083121,
+        1505.805588193726
+      ],
+      "size": {
+        "0": 241.79998779296875,
+        "1": 46
+      },
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "upscale_model",
+          "type": "UPSCALE_MODEL",
+          "link": 68
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 70
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            69
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageUpscaleWithModel"
+      }
+    },
+    {
+      "id": 24,
+      "type": "VAEDecode",
+      "pos": [
+        2281.800153887272,
+        1057.2859627616513
+      ],
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 50
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 33
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            34,
+            70
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      }
+    },
+    {
+      "id": 9,
+      "type": "SaveImage",
+      "pos": [
+        2772.2171777343724,
+        80.47204679107658
+      ],
+      "size": {
+        "0": 415.3547058105469,
+        "1": 389.4997253417969
+      },
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 25
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
       "id": 31,
       "type": "KSamplerAdvanced",
       "pos": [
-        314,
-        -1167
+        1893.1790019508994,
+        256.92928649822096
       ],
       "size": {
         "0": 315,
@@ -822,7 +904,7 @@
       "widgets_values": [
         "enable",
         747108973474244,
-        "randomize",
+        "fixed",
         20,
         8,
         "euler",
@@ -836,8 +918,8 @@
       "id": 32,
       "type": "KSamplerAdvanced",
       "pos": [
-        311,
-        -340
+        1883.800153887275,
+        914.2859627616513
       ],
       "size": {
         "0": 315,
@@ -906,7 +988,7 @@
       "widgets_values": [
         "enable",
         195961546926172,
-        "randomize",
+        "fixed",
         24,
         8,
         "euler",
@@ -917,38 +999,11 @@
       ]
     },
     {
-      "id": 26,
-      "type": "SaveImage",
-      "pos": [
-        1027,
-        -383
-      ],
-      "size": {
-        "0": 415.3547058105469,
-        "1": 389.4997253417969
-      },
-      "flags": {},
-      "order": 20,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 34,
-          "slot_index": 0
-        }
-      ],
-      "properties": {},
-      "widgets_values": [
-        "ComfyUI"
-      ]
-    },
-    {
       "id": 42,
       "type": "UpscaleModelLoader",
       "pos": [
-        -737,
-        279
+        128.73283817598607,
+        1016.4976856806425
       ],
       "size": {
         "0": 315,
@@ -972,15 +1027,15 @@
         "Node name for S&R": "UpscaleModelLoader"
       },
       "widgets_values": [
-        null
+        "4x-UltraSharp.pth"
       ]
     },
     {
       "id": 44,
       "type": "SaveImage",
       "pos": [
-        371.2961323242198,
-        235.2259913330076
+        2770.2339433593766,
+        1200.2454365234387
       ],
       "size": [
         1121.8752543945302,
@@ -1003,86 +1058,31 @@
       ]
     },
     {
-      "id": 43,
-      "type": "ImageUpscaleWithModel",
+      "id": 26,
+      "type": "SaveImage",
       "pos": [
-        -34,
-        388
+        2771.2336992187497,
+        639.0921425781245
       ],
       "size": {
-        "0": 241.79998779296875,
-        "1": 46
+        "0": 415.3547058105469,
+        "1": 389.4997253417969
       },
       "flags": {},
-      "order": 21,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
-          "name": "upscale_model",
-          "type": "UPSCALE_MODEL",
-          "link": 68
-        },
-        {
-          "name": "image",
+          "name": "images",
           "type": "IMAGE",
-          "link": 70
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            69
-          ],
-          "shape": 3,
+          "link": 34,
           "slot_index": 0
         }
       ],
-      "properties": {
-        "Node name for S&R": "ImageUpscaleWithModel"
-      }
-    },
-    {
-      "id": 24,
-      "type": "VAEDecode",
-      "pos": [
-        709,
-        -197
-      ],
-      "size": {
-        "0": 210,
-        "1": 46
-      },
-      "flags": {},
-      "order": 19,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 50
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 33
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            34,
-            70
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VAEDecode"
-      }
+      "properties": {},
+      "widgets_values": [
+        "ComfyUI"
+      ]
     }
   ],
   "links": [
@@ -1323,8 +1323,8 @@
     {
       "title": "Models",
       "bounding": [
-        -790,
-        -418,
+        76,
+        319,
         423,
         793
       ],
@@ -1334,8 +1334,8 @@
     {
       "title": "Input",
       "bounding": [
-        -790,
-        -1807,
+        701,
+        22,
         416,
         1320
       ],
@@ -1345,8 +1345,8 @@
     {
       "title": "Main Generation",
       "bounding": [
-        -191,
-        -1362,
+        1388,
+        62,
         1128,
         668
       ],
@@ -1356,8 +1356,8 @@
     {
       "title": "Main Result",
       "bounding": [
-        998,
-        -1009,
+        2741,
+        -4,
         481,
         505
       ],
@@ -1367,8 +1367,8 @@
     {
       "title": "Refiner Generation",
       "bounding": [
-        -161,
-        -443,
+        1412,
+        812,
         1108,
         471
       ],
@@ -1378,8 +1378,8 @@
     {
       "title": "Refiner Result",
       "bounding": [
-        1000,
-        -474,
+        2739,
+        546,
         473,
         518
       ],
@@ -1389,8 +1389,8 @@
     {
       "title": "Upscaler",
       "bounding": [
-        -58,
-        294,
+        2266,
+        1412,
         295,
         172
       ],
@@ -1400,8 +1400,8 @@
     {
       "title": "Upscale Result",
       "bounding": [
-        336,
-        134,
+        2740,
+        1110,
         1192,
         957
       ],
